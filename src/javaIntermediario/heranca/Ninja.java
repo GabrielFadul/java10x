@@ -1,0 +1,40 @@
+package javaIntermediario.heranca;
+
+public class Ninja {
+    public String nome;
+    public int idade;
+    public String aldeia;
+
+    public String missao;
+    public String statusMissao;
+    public String nivelDificuldade;
+    public String habilidadeEspecial;
+
+    public String getApresentacao() {
+        return "Meu nome é " + nome
+                + ", tenho " + idade
+                + " anos e sou da " + aldeia;
+    }
+
+    public void ativarHabilidadeEspecial() {
+        System.out.println(nome + " ativou a habilidade básica");
+    }
+
+    public void seApresentar() {
+        System.out.println(getApresentacao());
+    }
+
+    public int anosParaSeTornarHokage(int idadeMinimaParaSerHokage) {
+        return idadeMinimaParaSerHokage - idade;
+    }
+
+    public void mostrarInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Aldeia: " + aldeia);
+        System.out.println("Missão: " + missao);
+        System.out.println("Status Missão: " + statusMissao);
+        System.out.println("Nível de Dificuldade: " + nivelDificuldade);
+        System.out.println("Habilidade Especial: " + habilidadeEspecial);
+    }
+}
