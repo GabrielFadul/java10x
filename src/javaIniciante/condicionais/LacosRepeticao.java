@@ -1,5 +1,7 @@
 package javaIniciante.condicionais;
 
+import java.util.Scanner;
+
 public class LacosRepeticao {
     static void main() {
         /*
@@ -9,6 +11,8 @@ public class LacosRepeticao {
 
         //While
         //while(condicao) {tudo aqui vai acontecer)
+
+        Scanner sc = new Scanner(System.in);
 
         int numeroDeClones = 0;
         int numMaximoDeClones = 40;
@@ -24,5 +28,22 @@ public class LacosRepeticao {
         }
 
 
+        int numero;
+        do {
+            System.out.print("Digite um número (0 para sair): ");
+            numero = sc.nextInt();
+
+            System.out.println("Você digitou: " + numero);
+
+        } while (numero != 0);
+
+        int[] numeros = {10, 20, 30, 40, 50};
+
+        // for-each (for aprimorado)
+        for (int n : numeros) {
+            System.out.println(n);
+        }
+
     }
+
 }

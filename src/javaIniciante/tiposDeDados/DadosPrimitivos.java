@@ -20,5 +20,18 @@ public class DadosPrimitivos {
         System.out.println("Saldo bancário é: " + saldoBancario); // podendo concatenar com outra String ou variavel
         System.out.println("Idade no ninja é: " + idade);
 
+
+
+        boolean trueOrFalse = true; // false
+        byte _8bits = 127; // 255, dividido entre negativo e positivo
+        short _16bits = 32767;
+        int _32bits = 2147483647;
+        long _64bits = 9223372036854775807L; // Número maior (Usa L no final)
+        float decimal_32bits = 2.9999999f; // precisão simples (Usa f no final)
+        double decimal_64bits = 2.000000000000000; // precisão complexa
+        char char_16bits = 'A'; // Unicode ou ASCII
+
+
+
     }
 }
